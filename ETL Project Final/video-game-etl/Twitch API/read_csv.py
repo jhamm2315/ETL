@@ -1,4 +1,4 @@
-import pandas as pd
+import panda as pd
 import csv
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
