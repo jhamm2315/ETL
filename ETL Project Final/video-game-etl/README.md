@@ -3,12 +3,12 @@ Video Game ETL
 Summary:
 Extract, Transform, Load data that can be used to make an analysis on popular video games. Example analyses include determining what genre is popular right now, what popular live streamers are playing right now, what kind of video games make the most money, etc.
 
-We have gathered 3 different sources of information:
+I have gathered 3 different sources of information:
 - Twitch.tv API (https://dev.twitch.tv/)
 - IGDB Webscrape (https://www.igdb.com/)
 - Kaggle Dataset (https://www.kaggle.com/gregorut/videogamesales,  https://www.kaggle.com/alex333/video-games-with-reviews-and-playtime-statistics?select=GamesDataset.csv)
 
-First, gather information from Twitch.tv API to get live data from the top games being player at the moment.
+First, I gathered information from Twitch.tv API to get live data from the top games being played at the moment.
 
 Explaining the files:
 The config.py has user information needed to run the python files.
@@ -55,7 +55,7 @@ Steps Taken to Retrieve Kaggle Data:
 11. Query DB table to confirm data populated
 
 The final data are 3 different sql database table. Although sql is a relational database, these 3 databases
-are not connected to each other.
+are not connected to each other. you can use SQL joins or unions to combine data into 3 relatinal databases if that is your choosing.  
 
 Technologies:
 - Python (Pandas, Jupyter Notebook)
