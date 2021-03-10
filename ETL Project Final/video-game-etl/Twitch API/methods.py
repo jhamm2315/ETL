@@ -1,6 +1,6 @@
 import requests
 import json
-import pprint
+import print
 from config import client_id, authorization_token
 
 #this is found in in new twitch api documentation
