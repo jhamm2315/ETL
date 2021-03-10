@@ -1,4 +1,4 @@
-(![image](https://user-images.githubusercontent.com/59801521/110669438-9083ee00-8189-11eb-9dff-84879bc42218.png)
+![image](https://user-images.githubusercontent.com/59801521/110669438-9083ee00-8189-11eb-9dff-84879bc42218.png)
 ![Alt Text](https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/KEAjBNyhR0fVKjR47o/giphy.gif)
 
