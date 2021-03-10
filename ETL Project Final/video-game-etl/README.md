@@ -1,4 +1,4 @@
-Video Game ETL
+##Video Game ETL
 
 Summary:
 Extract, Transform, Load data that can be used to make an analysis on popular video games. Example analyses include determining what genre is popular right now, what popular live streamers are playing right now, what kind of video games make the most money, etc.
@@ -8,7 +8,7 @@ I have gathered 3 different sources of information:
 - IGDB Webscrape (https://www.igdb.com/)
 - Kaggle Dataset (https://www.kaggle.com/gregorut/videogamesales,  https://www.kaggle.com/alex333/video-games-with-reviews-and-playtime-statistics?select=GamesDataset.csv)
 
-First, I gathered information from Twitch.tv API to get live data from the top games being played at the moment.
+##First, I gathered information from Twitch.tv API to get live data from the top games being played at the moment.
 
 Explaining the files:
 The config.py has user information needed to run the python files.
@@ -17,7 +17,7 @@ The run.py will output a json response of the top 20 games being played at the t
 The convert.py to convert the json file into a csv.
 The read_csv.py  will convert the csv and input into a table on postgres SQL.
 
-Steps Taken to Retrieve Twitch Data:
+#Steps Taken to Retrieve Twitch Data:
 1. Before doing anything, edit the "config.py" file and add your username and password for postgres SQL.
 2. Run "python run.py"
 3. Run "python convert.py"
@@ -25,9 +25,9 @@ Steps Taken to Retrieve Twitch Data:
 4. Run "python read_csv.py"
 5. Done! You will now have data available to view the top 20 games playing on Twitch.tv.
 
-Second, webscrape from IGDB which contains information on top games rated by critics and reviews.
+##Second, webscrape from IGDB which contains information on top games rated by critics and reviews.
 
-Steps Taken to Retrieve IGDB Data:
+#Steps Taken to Retrieve IGDB Data:
 1. Retrieve top 100 games from any platform from 1958 to 2020
 2. When looking at the website, first thought to use was panda scraping
 3. Opened jupyter notebook, connected to the URL
@@ -39,9 +39,9 @@ Steps Taken to Retrieve IGDB Data:
 9. Loaded the data using pandas
 10. Lastly confirmed the data by querying the table
 
-Lastly, download csv files from Kaggle dataset to get information on videogame sales and playtime.
+##Lastly, download csv files from Kaggle dataset to get information on videogame sales and playtime.
 
-Steps Taken to Retrieve Kaggle Data:
+#Steps Taken to Retrieve Kaggle Data:
 1. Create Jupytner notebook file
 2. Create config python file with your password for PG Admin
 3. Import decencies Pandas, from sqlalchemy import create_engine, from config import password, import numpy as np
@@ -54,10 +54,10 @@ Steps Taken to Retrieve Kaggle Data:
 10. Complete .to_sql to push data into the PG Admin DB
 11. Query DB table to confirm data populated
 
-The final data are 3 different sql database table. Although sql is a relational database, these 3 databases
+##The final data are 3 different sql database table. Although sql is a relational database, these 3 databases
 are not connected to each other. you can use SQL joins or unions to combine data into 3 relatinal databases if that is your choosing.  
 
-Technologies:
+##Technologies:
 - Python (Pandas, Jupyter Notebook)
 - SQL (PostgresSQL)
 - Beautiful Soup
