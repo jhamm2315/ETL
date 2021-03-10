@@ -12,7 +12,7 @@ First, I gathered information from Twitch.tv API to get live data from the top g
 
 Explaining the files:
 The config.py has user information needed to run the python files.
-The methods.py containes a function to to a get request of the the top 20 games.
+The methods.py containes a function to get a request of the the top 20 games.
 The run.py will output a json response of the top 20 games being played at the time of the function.
 The convert.py to convert the json file into a csv.
 The read_csv.py  will convert the csv and input into a table on postgres SQL.
